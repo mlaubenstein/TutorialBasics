@@ -5,36 +5,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String str = new String ( "Hello World !" );
-        String sub = str.substring ( 0, 13 );
-        Scanner scan = new Scanner ( System.in );
-        Scanner scanNumb = new Scanner ( System.in );
-        Scanner scanDouble = new Scanner ( System.in );
-        String inData;
-        int inDataNumb;
-        double inDataDouble = 0;
 
-        Ausgaben ausgabenObject = new Ausgaben ();
 
-        //Simple HelloWorld
-        ausgabenObject.HelloWorldOut ( sub );
 
-        //Output of an Error
-        //str = null;
-        //ausgabenObject.ErrorOut ( str );
+        //(1) Erzeugen Sie mit dem new-Operator ein Objekt der Klasse Plaetzchen.
+        Plaetzchen plaetzchen = new Plaetzchen();
 
-        //Input and Output of a Scanner-Object
-        System.out.println ( "Input:" );
-        inData = scan.nextLine ();
+        //(2) Weisen Sie über die Punktnotation referenzvariable.instanzvariable
+        //    den Instanzvariablen des Objekts Werte zu.
 
-        //Input just Numbers and ^2 them
-        System.out.println ( "Input Numbers: " );
-        inDataNumb = scanNumb.nextInt ();
+        plaetzchen.setPlaetzchen ();
 
-        //Double with Exponential Spelling
-        System.out.println ( "Input Double with E+Exponent: " );
-        inDataDouble = scanDouble.nextDouble ();
-        ausgabenObject.ScannerOut (inData, inDataNumb, inDataDouble);
+        //(3) Lassen Sie dann das Plaetzchen-Objekt seine Methode ausgeben() aufrufen.
+
+        //(4) Testen Sie Ihr Programm.
 
 
 

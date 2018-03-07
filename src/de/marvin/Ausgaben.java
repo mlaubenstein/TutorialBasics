@@ -1,28 +1,16 @@
 package de.marvin;
 
 
-
+import java.util.Scanner;
 
 public class Ausgaben {
 
-    public  void HelloWorldOut(String str){
-        System.out.println ( str+"" );
+    public void ausgeben(String sorte, String groesse, String form)
+    {
+        // gibt Informationen über die Plätzchen aus z.B.
+        // Sorte Kokos, Groesse mittel, Form rund
+
+        System.out.println ( "Plaetzchen1 = "+"Sorte " + sorte + ", Groesse " + groesse + ", Form " + form );
     }
 
-
-    /*public void ErrorOut(String str) {
-        System.err.println ( "ERROR, String is NULL" );
-
-    }*/
-
-    public void ScannerOut(String inData, int inDataNumb, double inDataDouble) {
-
-
-        System.out.println ("Output = "+ inData );
-
-        System.out.println(inDataNumb + "^2 = "+ inDataNumb*inDataNumb);
-
-        System.out.println ( "Output Double E+Exponent = " + inDataDouble );
-
-    }
 }
